@@ -1,0 +1,2 @@
+node_modules
+# Do NOT .gitignore dist/ or else the action won't run

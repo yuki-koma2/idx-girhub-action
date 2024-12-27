@@ -1,0 +1,24 @@
+{
+  "name": "generate-folder-readme-agent-github-action",
+  "version": "1.0.0",
+  "description": "A GitHub action that generates a README for a folder with AI, via a pull request, when you tag an issue as AutoReadme",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild --platform=node --bundle ./src/index.ts --outdir=dist",
+    "dev": "npm run build -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/exec": "^1.1.1",
+    "@actions/github": "^6.0.0",
+    "@actions/io": "^1.1.3",
+    "@google/generative-ai": "^0.11.1",
+    "@types/node": "^20.12.11",
+    "esbuild": "^0.21.1",
+    "istextorbinary": "^9.5.0",
+    "typescript": "^5.4.5"
+  }
+}

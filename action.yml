@@ -1,0 +1,12 @@
+name: 'README Generator'
+description: 'Generates a README for a folder when you tag an issue as AutoReadme'
+inputs:
+  githubToken:
+    description: 'GitHub Token, should pass through secrets.GITHUB_TOKEN'
+    required: true
+  geminiApiKey:
+    description: 'Gemini API key, get one from https://aistudio.google.com/app/apikey'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
